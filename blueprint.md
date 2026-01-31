@@ -5,23 +5,25 @@ This project is a simple web application consisting of a login interface. It aim
 
 ## Current Architecture
 - **Entry Point:** `index.html`
-- **Styling:** `style.css`
+- **Styling:** `style.css` (Partially superseded by Tailwind in `index.html`)
 - **Logic:** `main.js`
-- **Frameworks:** None (Vanilla JS/CSS)
+- **Frameworks:** Tailwind CSS (via CDN)
 
 ## Detailed Outline: Implemented Features
 - **Login Screen:**
-    - `index.html`: Login form with ID, Password fields, and a "Sign In" button.
-    - `style.css`: Modern styling with CSS variables, Flexbox, and responsive design.
+    - `index.html`: Previously contained a login form. Now updated to "Starbucks Summer Promotion" page.
+    - `style.css`: Modern styling with CSS variables, Flexbox, and responsive design (May need review).
     - `main.js`: Form submission handling (log to console, alert).
     - **Update:** Changed title to "로그인".
 - **Dark Mode Toggle:**
-    - `index.html`: Added a toggle switch next to the "로그인" title within a `form-header` container.
-    - `style.css`: Styled the toggle switch and defined dark mode styles using `[data-theme="dark"]` with CSS variables.
-    - `main.js`: Implemented logic to toggle `data-theme` attribute on `body` and save preference to `localStorage`.
+    - `index.html`: Previously had a toggle switch. Current state in `index.html` needs review to see if preserved.
+    - `style.css`: Styled the toggle switch and defined dark mode styles.
+    - `main.js`: Implemented logic to toggle `data-theme`.
 - **Join Button:**
-    - `index.html`: Added a "Join" button (`secondary-btn`) below the "Sign In" button.
-    - `style.css`: Styled the `secondary-btn` to have a distinct appearance and added spacing between the buttons.
-    - `main.js`: Added an event listener for the "Join" button, showing an alert when clicked.
+    - `index.html`: Previously had a "Join" button. Current state in `index.html` needs review.
+    - `style.css`: Styled the `secondary-btn`.
+    - `main.js`: Added an event listener for the "Join" button.
+- **Starbucks Summer Promotion Page:**
+    - `index.html`: Updated with new content using Tailwind CSS and Material Symbols, replacing the previous login form.
 
 ## Current Plan: (No pending changes)
