@@ -15,16 +15,13 @@ This project is a simple web application consisting of a login interface. It aim
     - `style.css`: Modern styling with CSS variables, Flexbox, and responsive design.
     - `main.js`: Form submission handling (log to console, alert).
     - **Update:** Changed title to "로그인".
+- **Dark Mode Toggle:**
+    - `index.html`: Added a toggle switch next to the "로그인" title within a `form-header` container.
+    - `style.css`: Styled the toggle switch and defined dark mode styles using `[data-theme="dark"]` with CSS variables.
+    - `main.js`: Implemented logic to toggle `data-theme` attribute on `body` and save preference to `localStorage`.
+- **Join Button:**
+    - `index.html`: Added a "Join" button (`secondary-btn`) below the "Sign In" button.
+    - `style.css`: Styled the `secondary-btn` to have a distinct appearance and added spacing between the buttons.
+    - `main.js`: Added an event listener for the "Join" button, showing an alert when clicked.
 
-## Current Plan: Add Toggle Button
-**Goal:** Add a toggle button next to the "로그인" text that switches between Light and Dark modes.
-
-**Steps:**
-1.  **HTML Structure:**
-    -   Modify `index.html` to wrap the `<h2>` title and a new toggle switch (checkbox) in a wrapper `<div>`.
-2.  **Styling:**
-    -   Update `style.css` to style the toggle switch.
-    -   Adjust the layout of the header to position the toggle next to the title.
-    -   Define a `.dark-mode` class (or data-theme attribute) that overrides the CSS variables for colors.
-3.  **Interactivity:**
-    -   Update `main.js` to toggle the theme when the switch is clicked.
+## Current Plan: (No pending changes)

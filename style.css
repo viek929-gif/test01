@@ -173,6 +173,29 @@ input:checked + .slider:before {
   transform: translateY(1px);
 }
 
+.secondary-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, transform 0.05s ease;
+  margin-top: 1rem; /* Space between buttons */
+}
+
+.secondary-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.secondary-btn:active {
+  transform: translateY(1px);
+}
+
 @media (max-width: 480px) {
   .login-form {
     padding: 1.5rem;

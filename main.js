@@ -36,4 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
       alert(`Login attempted with ID: ${data.username}`);
     });
   }
+
+  const joinButton = document.getElementById('joinButton');
+  if (joinButton) {
+    joinButton.addEventListener('click', () => {
+      alert('Join button clicked! (This would navigate to a registration page)');
+    });
+  }
 });
