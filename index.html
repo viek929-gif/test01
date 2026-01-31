@@ -1,40 +1,161 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login</title>
-  <link href='/style.css' rel='stylesheet'>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="login-container">
-    <form class="login-form" id="loginForm">
-      <div class="form-header">
-        <h2>로그인</h2>
-        <label class="toggle-switch">
-          <input type="checkbox" id="themeToggle">
-          <span class="slider"></span>
-        </label>
-      </div>
-      <p class="subtitle">Please enter your details to sign in.</p>
-      
-      <div class="input-group">
-        <label for="username">ID</label>
-        <input type="text" id="username" name="username" placeholder="Enter your ID" required>
-      </div>
-      
-      <div class="input-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" required>
-      </div>
+<!DOCTYPE html>
 
-      <button type="submit" class="submit-btn">Sign In</button>
-      <button type="button" class="secondary-btn" id="joinButton">Join</button>
-    </form>
-  </div>
-  <script type="module" src="/main.js"></script>
-</body>
-</html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Starbucks Summer Promotion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#11d452",
+                "background-light": "#f6f8f6",
+                "background-dark": "#102216",
+              },
+              fontFamily: {
+                "display": ["Plus Jakarta Sans"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-[#111813] dark:text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col max-w-[480px] mx-auto overflow-x-hidden shadow-2xl bg-white dark:bg-background-dark">
+<!-- TopAppBar -->
+<div class="sticky top-0 z-50 flex items-center bg-white/90 dark:bg-background-dark/90 backdrop-blur-md p-4 pb-2 justify-between">
+<div class="text-[#111813] dark:text-white flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<h2 class="text-[#111813] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Summer Specials</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#111813] dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+<!-- HeaderImage Section -->
+<div class="@container">
+<div class="px-4 py-3">
+<div class="relative bg-cover bg-center flex flex-col justify-end overflow-hidden bg-white rounded-xl min-h-96" data-alt="Seasonal strawberry latte with whipped cream and fresh strawberries" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 40%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2_S9-OK4Jo9q2HM-QwwzeVd4F6_19u6oBDYlK7SDFblzUU6vYjwoq-JgdLufssipffrbYcvj27ba1NcHQyz4OWd9evUWLSkmksS8OmMJLjR3pB-KNDV9DdTI-NAjqTnXDp2eDUZwE8D52HUqCSbhVolDv4qc5FIK36E74nSwWm3lPUA9lgt5XCqq6NkoQq1Di_O6tOc4rHZkM0wkXxWddlDn8S3rYkUXFQmXgkzL2Zy8FnkNFMDfSSr1qHb8Ru92eZmq-xENpw6o");'>
+<div class="absolute top-4 left-4 bg-primary text-[#102216] px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase">
+                        New Summer
+                    </div>
+<div class="flex flex-col p-6">
+<p class="text-white tracking-tight text-[32px] font-extrabold leading-tight">Sip into Summer</p>
+<p class="text-white/90 text-sm mt-1">Try our new Strawberry Cream Latte, a refreshing twist on a classic favorites.</p>
+<button class="mt-4 w-fit px-6 py-2 bg-primary text-[#102216] rounded-full font-bold text-sm">Order Now</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Rewards Section -->
+<div class="px-4 py-2">
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-sm border border-neutral-100 dark:border-white/10 bg-white dark:bg-white/5 overflow-hidden">
+<div class="flex w-full flex-col items-stretch justify-center gap-1 p-5">
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-[#111813] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Starbucks Rewards</p>
+<p class="text-[#11d452] text-sm font-medium mt-1">25 stars away from a free drink!</p>
+</div>
+<span class="material-symbols-outlined text-primary">stars</span>
+</div>
+<!-- ProgressBar -->
+<div class="flex flex-col gap-2 mt-2">
+<div class="flex gap-6 justify-between items-center">
+<p class="text-[#111813]/60 dark:text-white/60 text-xs font-medium uppercase tracking-wider">Reward Progress</p>
+<p class="text-[#111813] dark:text-white text-sm font-bold">25/50 Stars</p>
+</div>
+<div class="rounded-full h-2.5 bg-[#dbe6df] dark:bg-white/10 overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 50%;"></div>
+</div>
+</div>
+<div class="flex items-center gap-3 justify-between mt-4">
+<p class="text-[#111813]/70 dark:text-white/70 text-sm font-normal leading-snug">Collect stars and earn rewards every time you sip.</p>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary text-[#102216] text-sm font-bold leading-normal shadow-sm">
+                            Join Now
+                        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- SectionHeader -->
+<div class="flex items-center justify-between px-4 pt-6 pb-2">
+<h2 class="text-[#111813] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Limited Time Offers</h2>
+<p class="text-primary text-sm font-bold cursor-pointer">See all</p>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-2 gap-4 px-4 pb-10">
+<!-- Product 1 -->
+<div class="flex flex-col gap-2">
+<div class="aspect-square w-full rounded-xl bg-cover bg-center shadow-sm" data-alt="Lemon Drizzle Cake slice on a plate" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAx-sgDq2ZOWsCCIpXrM2JhKvuP0i19OWmYlV3Y0JOiCp_GgrUz8IR4ba6dsHApaJu6zoUCJCG3VOOjeGAmXlzkVOvXtglSKrxxLqzQqTbcb8aGlh2mIoqZBd6KElPeIAvCFcA9EPqOgiGOCYy_heSVaf-w6VTsu5BUWXSe98vwd3t0Igw4B6WL5T08nHTBAdatt1oz_goFxYXPT41-zV-JeJkTLIbahz1XM1z1vwf_ayYe4QnieIwZpy_EaMXl044KojqmAstWYUA");'>
+</div>
+<div class="flex flex-col">
+<p class="text-[#111813] dark:text-white text-sm font-bold">Lemon Drizzle Cake</p>
+<p class="text-[#111813]/60 dark:text-white/60 text-xs">$4.25 • 280 Cal</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="flex flex-col gap-2">
+<div class="aspect-square w-full rounded-xl bg-cover bg-center shadow-sm" data-alt="Ocean Teal Cold Cup merchandise" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMco_hRRZFvyXnnyE9JylwMOntxFVt84KzgbCLDvQysm5yEorNi6lRRQwYGwntWYgh2guO5QZYYquxj5WipyG1VSV_7JkI15fzJdpLmTl1X0P432Hoc8ZFPvMCzxxTFMVE9IrlGipKHnLUrvPZQacl_8B0bc-RM09d-AjguZ4urktXoL1l4RSKt8P32kw0ITTga7mB3JXFFiyZpE0SrvOGEMCVHinIwLNaxrjaS1lmiaIBc2gTNK8CUQziKm7Bv2239ljzQsGdLxo");'>
+</div>
+<div class="flex flex-col">
+<p class="text-[#111813] dark:text-white text-sm font-bold">Ocean Teal Cold Cup</p>
+<p class="text-[#111813]/60 dark:text-white/60 text-xs">$19.95 • Limited Ed.</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="flex flex-col gap-2">
+<div class="aspect-square w-full rounded-xl bg-cover bg-center shadow-sm" data-alt="Ham and Swiss Croissant" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHlubjyVQrSdavw8TRgi9LQBcHU3xgh4v-9c8YxvO04Bl3fE3pl6_CAcYn8cVNpfGfPMGA0prN-6XxBVBVWZm6SkRYoEisP_dmizUxjWuNQVDUpuBTKTXwqEk1AJRRlP3U47_VkZB8PG3UVQrYgEGNqkABc0L9s9_hlf8xtIvbRsuRPXMWHeWMgmxUYqVhFzKRU5uDfJ5bHY_WNt6So0nNJYQDk0PEXkmtQ205xjfPvvZXZxEj14_4ezNEUXfWEmnQw4mWEEJUlCg");'>
+</div>
+<div class="flex flex-col">
+<p class="text-[#111813] dark:text-white text-sm font-bold">Ham &amp; Swiss Croissant</p>
+<p class="text-[#111813]/60 dark:text-white/60 text-xs">$5.45 • 320 Cal</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="flex flex-col gap-2">
+<div class="aspect-square w-full rounded-xl bg-cover bg-center shadow-sm" data-alt="Summer Gradient Tumbler" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPijBqXmu0LWmwluUByRIo2yO2n9GsSBCEGV9NoqyqaeySRdd_0m6uCLs1rAswCuXpRcOQHCouKjaas-DPs8BHWNibvkzoZI6bmsVfAFj3cHFBmZEXQCUi-zT70qLFqS9pvdVeaHs2jOjXm9m0IGCHYeak66dWxEYfAvwukojH6RWcV-gH2jYuuMImApeLaWbwSZKtcSkxo5kOlAKPgOrq5MGzLqIgeUTA7xWANP6ZQ0QWR1J8aH0Eki1DVrhEs7vRfzdmsFX5-ic");'>
+</div>
+<div class="flex flex-col">
+<p class="text-[#111813] dark:text-white text-sm font-bold">Gradient Tumbler</p>
+<p class="text-[#111813]/60 dark:text-white/60 text-xs">$22.95 • 24 fl oz</p>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-white/5 p-8 text-center border-t border-neutral-100 dark:border-white/5">
+<p class="text-xs text-[#111813]/50 dark:text-white/50 leading-relaxed">
+                *At participating stores. Some restrictions apply. See Starbucks.com/rewards for details. Fresh strawberries available while supplies last.
+            </p>
+<div class="flex justify-center gap-6 mt-6">
+<span class="material-symbols-outlined text-[#111813]/60 dark:text-white/60">location_on</span>
+<span class="material-symbols-outlined text-[#111813]/60 dark:text-white/60">info</span>
+<span class="material-symbols-outlined text-[#111813]/60 dark:text-white/60">help</span>
+</div>
+<p class="text-xs text-primary font-bold mt-4">Find a Store</p>
+</footer>
+<!-- Empty space for safe area -->
+<div class="h-10 bg-white dark:bg-background-dark"></div>
+</div>
+</body></html>
